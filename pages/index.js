@@ -44,10 +44,6 @@ export default function Home() {
           </div>
         </div>
 
-
-       
-
-
         <div class="col">
             <div class="card shadow-sm mt-3">
                 <div class="card-body">
