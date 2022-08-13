@@ -15,7 +15,18 @@ export default function Home() {
         <p className="description">
           Get started by editing <code>pages/index.js</code>
         </p>
+
+        <audio controls>
+          <source src="./assets/voice/R-001.wav"></source>
+        </audio>
+
+
+
+
+
       </main>
+
+
 
       <Footer />
     </div>
