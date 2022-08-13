@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Header from '@components/Header'
 import Footer from '@components/Footer'
+import Voice from '@components/VoiceContent'
 
 export default function Home() {
   return (
@@ -8,6 +9,11 @@ export default function Home() {
       <Head>
         <title>Next.js Starter!</title>
         <link rel="icon" href="/favicon.ico" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+          crossorigin="anonymous"></script>
       </Head>
 
       <main>
@@ -20,8 +26,26 @@ export default function Home() {
           <source src="./assets/voice/R-001.wav"></source>
         </audio>
 
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <ul class="nav nav-tabs">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">男性</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">FAQ</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled">Comming Soon</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
 
 
+        <Voice />
 
 
       </main>
